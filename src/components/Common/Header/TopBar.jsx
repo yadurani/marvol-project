@@ -15,7 +15,7 @@ const TopBar = ({ handleOpen }) => (
         <TopBarIconMenu />
       </TopBarMenuMobile>
       <TopBarLink to="/">Registrarse | Unirse</TopBarLink>
-      <TopBarLogo alt="Logo de Marvol" src="/images/Marvel-logo.png" />
+      <TopBarLogo alt="Logo de Marvol" src="images/Marvel-logo.png" />
     </TopBarWrapper>
   </Container>
 )
