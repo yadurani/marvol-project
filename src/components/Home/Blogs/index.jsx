@@ -16,8 +16,8 @@ const Blogs = () => {
     <Container>
       <BlogWrapper>
         <BlogTitle>Lo último</BlogTitle>
-        {blogs?.map((blog) => (
-          <BlogCard>
+        {blogs?.map((blog, i) => (
+          <BlogCard key={i}>
             <BlogCardImg src={blog.img} alt={blog.subtitle} />
             <BlogCardText>
               <BlogCardCaption>{blog.caption}</BlogCardCaption>

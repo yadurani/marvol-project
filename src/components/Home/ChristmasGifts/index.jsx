@@ -36,8 +36,8 @@ const ChristmasGifts = () => {
       </GiftBannerContent>
       <Container>
         <GiftsList>
-          {gifts?.map((gift) => (
-            <GiftItem>
+          {gifts?.map((gift, i) => (
+            <GiftItem key={i}>
               <GiftItemImg src={gift.img} alt={gift.title} />
               <GiftItemCaption>{gift.caption}</GiftItemCaption>
               <GiftTitle>{gift.title}</GiftTitle>
