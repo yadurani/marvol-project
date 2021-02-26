@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/marvol-project/static/js/main.c99319e1.chunk.js",
+    "main.js.map": "/marvol-project/static/js/main.c99319e1.chunk.js.map",
+    "runtime-main.js": "/marvol-project/static/js/runtime-main.259c9c8e.js",
+    "runtime-main.js.map": "/marvol-project/static/js/runtime-main.259c9c8e.js.map",
+    "static/js/2.c5e8779c.chunk.js": "/marvol-project/static/js/2.c5e8779c.chunk.js",
+    "static/js/2.c5e8779c.chunk.js.map": "/marvol-project/static/js/2.c5e8779c.chunk.js.map",
+    "index.html": "/marvol-project/index.html",
+    "static/js/2.c5e8779c.chunk.js.LICENSE.txt": "/marvol-project/static/js/2.c5e8779c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.259c9c8e.js",
+    "static/js/2.c5e8779c.chunk.js",
+    "static/js/main.c99319e1.chunk.js"
+  ]
+}
