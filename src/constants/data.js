@@ -83,22 +83,22 @@ export const slides = [
 
 export const gifts = [
   {
-    img: '/images/gifts/gift-1.png',
+    img: 'images/gifts/gift-1.png',
     caption: 'Engranaje',
     title: 'Guía de regalos navideños: Marvel Pins',
   },
   {
-    img: '/images/gifts/gift-2.png',
+    img: 'images/gifts/gift-2.png',
     caption: 'Engranaje',
     title: 'Guía de regalos navideños: para aquellos que aman 3000',
   },
   {
-    img: '/images/gifts/gift-3.png',
+    img: 'images/gifts/gift-3.png',
     caption: 'Engranaje',
     title: 'Guía de regalos navideños: funko Pops',
   },
   {
-    img: '/images/gifts/gift-4.png',
+    img: 'images/gifts/gift-4.png',
     caption: 'Engranaje',
     title: 'Guía de regalos navideños: Cozy and Comfy Longewear',
   },
@@ -106,18 +106,18 @@ export const gifts = [
 
 export const blogs = [
   {
-    img: '/images/blogs/blog-1.png',
+    img: 'images/blogs/blog-1.png',
     caption: 'REMOLQUES Y EXTRAS',
     subtitle: '¡Los orígenes de BATTLEWORLD! | Marvel Reino de Campeones',
   },
   {
-    img: '/images/blogs/blog-2.png',
+    img: 'images/blogs/blog-2.png',
     caption: 'REMOLQUES Y EXTRAS',
     subtitle:
       'Women of Marvel le da la bienvenida a Brittney Morris, autora de la novela precuela de "Marvel"s Spider-Man: Miles Morales"',
   },
   {
-    img: '/images/blogs/blog-3.png',
+    img: 'images/blogs/blog-3.png',
     caption: 'REMOLQUES Y EXTRAS',
     subtitle:
       'Dónde leer el trabajo de las mujeres que aparecen en Marvel"s 616: "Más alto, más rápido"',
