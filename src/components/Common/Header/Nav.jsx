@@ -22,28 +22,35 @@ const NavBar = ({ active, handleOpen }) => {
     <NavWrapper active={active}>
       <Container>
         <NavList>
-          <NavCloseMobile onClick={handleOpen}>
-            <NavIconClose />
-          </NavCloseMobile>
+          <NavItem>
+            <NavCloseMobile
+              onClick={handleOpen}
+              role="button"
+              aria-label="Close Mobile">
+              <NavIconClose />
+            </NavCloseMobile>
+          </NavItem>
           <NavItem>Videos</NavItem>
           <NavItem>Caracteres</NavItem>
           <NavItem onClick={handleOpen}>
             <NavItemLink to="/historietas">Historietas</NavItemLink>
           </NavItem>
-          <NavItem className="films" onClick={handleFilms}>
+          <NavItem className="films">
             Películas
-            <NavIconNext />
+            <NavIconNext onClick={handleFilms} />
             <Submenu
+              close={handleFilms}
               active={isOpenFilms}
               className="films-hover"
               title={films.title}
               data={films.data}
             />
           </NavItem>
-          <NavItem className="series" onClick={handleSeries}>
+          <NavItem className="series">
             Programas de televisión
-            <NavIconNext />
+            <NavIconNext onClick={handleSeries} />
             <Submenu
+              close={handleSeries}
               active={isOpenSeries}
               className="series-hover"
               title={seriesTv.title}

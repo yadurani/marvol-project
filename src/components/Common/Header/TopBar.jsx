@@ -11,7 +11,10 @@ import { Container } from '../../../styled/styledCommons'
 const TopBar = ({ handleOpen }) => (
   <Container>
     <TopBarWrapper>
-      <TopBarMenuMobile onClick={handleOpen}>
+      <TopBarMenuMobile
+        onClick={handleOpen}
+        role="button"
+        aria-label="Menu Mobile">
         <TopBarIconMenu />
       </TopBarMenuMobile>
       <TopBarLink to="/">Registrarse | Unirse</TopBarLink>

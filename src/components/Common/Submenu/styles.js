@@ -5,6 +5,8 @@ import { TitleContainer } from '../Title/styles'
 export const SubmenuWrapper = styled.div`
   background: ${({ theme }) => theme.colors.white};
   bottom: 0;
+  display: none;
+  height: fit-content;
   left: 0;
   overflow: auto;
   padding: 40px 0;
@@ -12,11 +14,11 @@ export const SubmenuWrapper = styled.div`
   right: 0;
   text-align: center;
   top: 93px;
-  display: none;
   @media (max-width: 768px) {
     background: ${({ theme }) => theme.colors.secondary};
     display: block;
     padding: 15px;
+    height: 100%;
     text-align: left;
     top: 0;
     transform: ${(props) =>
@@ -37,9 +39,11 @@ export const SubmenuList = styled.ul`
   grid-gap: 32px;
   grid-template-columns: repeat(4, 1fr);
   padding: 0;
+  margin: 0 160px;
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     grid-gap: 0;
+    margin: 0 0;
     ${CardImg},
     ${CardSubtitle} {
       display: none;

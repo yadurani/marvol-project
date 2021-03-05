@@ -6,7 +6,7 @@ export const ButtonContainer = styled.button`
   border: none;
   color: ${({ theme }) => theme.colors.white};
   cursor: pointer;
-  font-size: ${({ theme }) => theme.sizeFont.md};
+  font-size: ${({ theme }) => theme.sizeFont.sm};
   font-weight: bold;
   padding: 16px 32px;
   text-transform: uppercase;

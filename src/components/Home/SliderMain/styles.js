@@ -25,7 +25,13 @@ export const SliderNavList = styled.ul`
   position: relative;
   margin: 0;
   @media (max-width: 767px) {
-    display: none;
+    background-color: transparent;
+    top: calc(100vh - 270px);
+    box-shadow: none;
+    grid-gap: 10px;
+    left: 0;
+    position: absolute;
+    width: 100%;
   }
 `
 export const SlideNavItem = styled.li`
@@ -36,6 +42,15 @@ export const SlideNavItem = styled.li`
   list-style: none;
   padding: 20px 0;
   position: relative;
+  @media (max-width: 767px) {
+    background-color: white;
+    height: 5px;
+    overflow: hidden;
+    padding: 0;
+    span {
+      display: none;
+    }
+  }
   ${(props) =>
     props.active &&
     css`
@@ -54,6 +69,9 @@ export const SlideNavItem = styled.li`
     top: 0;
     width: calc(100% + 40px);
     visibility: hidden;
+    @media (max-width: 767px) {
+      height: 5px;
+    }
   }
   &:hover {
     color: ${({ theme }) => theme.colors.primary.main};

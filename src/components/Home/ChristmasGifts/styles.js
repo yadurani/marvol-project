@@ -61,7 +61,7 @@ export const GiftBannerText = styled.div`
   }
 `
 
-export const GiftsList = styled.div`
+export const GiftsList = styled.ul`
   background-color: ${({ theme }) => theme.colors.white};
   display: grid;
   grid-gap: 24px;

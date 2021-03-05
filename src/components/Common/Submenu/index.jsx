@@ -10,11 +10,14 @@ import {
   SubmenuIcon,
 } from './styles'
 
-const Submenu = ({ title, data, className, active }) => {
+const Submenu = ({ title, data, className, active, close }) => {
   return (
     <SubmenuWrapper className={className} active={active}>
       <Container>
-        <SubmenuBackButton>
+        <SubmenuBackButton
+          role="button"
+          aria-label="Back Button"
+          onClick={close}>
           <SubmenuIcon />
         </SubmenuBackButton>
         <Title>{title}</Title>

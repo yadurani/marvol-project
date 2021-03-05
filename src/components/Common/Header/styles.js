@@ -122,7 +122,17 @@ export const NavItem = styled.li`
   padding: 5px 15px;
   position: relative;
   text-transform: uppercase;
+  &:focus,
+  &:active,
+  &:visited {
+    outline: none;
+    background-color: transparent;
+  }
+  &:first-child {
+    padding: 15px 0 0;
+  }
   @media (max-width: 768px) {
+    position: relative;
     align-items: center;
     display: grid;
     font-size: ${({ theme }) => theme.sizeFont.md};
@@ -156,7 +166,7 @@ export const NavItem = styled.li`
   &.series {
     &:hover .films-hover,
     &:hover .series-hover {
-      display: block;
+      display: initial;
     }
   }
 `
@@ -196,12 +206,29 @@ export const NavIconClose = styled.div`
   }
 `
 
-export const NavIconNext = styled.div`
-  border-right: 3px solid ${({ theme }) => theme.colors.primary.main};
-  border-bottom: 3px solid ${({ theme }) => theme.colors.primary.main};
-  height: 10px;
-  width: 10px;
-  transform: rotate(-45deg);
+export const NavIconNext = styled.button`
+  background-color: transparent;
+  border: none;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+  &:before {
+    border-bottom: 3px solid ${({ theme }) => theme.colors.primary.main};
+    border-right: 3px solid ${({ theme }) => theme.colors.primary.main};
+    content: '';
+    height: 10px;
+    position: absolute;
+    right: 5px;
+    transform: rotate(-45deg);
+    width: 10px;
+  }
   @media (min-width: 769px) {
     display: none;
   }

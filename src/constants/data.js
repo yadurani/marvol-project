@@ -123,3 +123,22 @@ export const blogs = [
       'Dónde leer el trabajo de las mujeres que aparecen en Marvel"s 616: "Más alto, más rápido"',
   },
 ]
+
+export const socials = [
+  {
+    name: 'Facebook',
+    img: 'images/social/facebook.svg',
+  },
+  {
+    name: 'Twitter',
+    img: 'images/social/twitter.svg',
+  },
+  {
+    name: 'Instagram',
+    img: 'images/social/instagram.svg',
+  },
+  {
+    name: 'Youtube',
+    img: 'images/social/youtube.svg',
+  },
+]

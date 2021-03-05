@@ -42,7 +42,7 @@ const SliderMain = () => {
               key={i}
               active={activeIndex === i}
               onClick={() => handleNav(i)}>
-              {slide.caption}
+              <span>{slide.caption}</span>
             </SlideNavItem>
           ))}
         </SliderNavList>

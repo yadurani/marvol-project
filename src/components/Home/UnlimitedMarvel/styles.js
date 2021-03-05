@@ -62,5 +62,6 @@ export const UnlimitedBannerText = styled.div`
 `
 export const UnlimitedTitle = styled.p`
   color: ${({ theme }) => theme.colors.primary.main};
+  font-weight: 700;
   margin-top: 0;
 `

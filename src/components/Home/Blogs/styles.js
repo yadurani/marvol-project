@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const BlogWrapper = styled.div`
-  margin: 50px 0 30px;
+  margin: 50px 0 0;
   width: 70%;
   @media (max-width: 767px) {
     width: 100%;
@@ -28,7 +28,7 @@ export const BlogCard = styled.div`
   }
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
-    grid-gap: 24 px;
+    grid-gap: 24px;
   }
 `
 export const BlogCardImg = styled.img`
