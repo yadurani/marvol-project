@@ -5,6 +5,7 @@ import {
   TopBarLogo,
   TopBarMenuMobile,
   TopBarIconMenu,
+  TopBarLogoLink,
 } from './styles'
 import { Container } from '../../../styled/styledCommons'
 
@@ -18,7 +19,9 @@ const TopBar = ({ handleOpen }) => (
         <TopBarIconMenu />
       </TopBarMenuMobile>
       <TopBarLink to="/">Registrarse | Unirse</TopBarLink>
-      <TopBarLogo alt="Logo de Marvol" src="images/Marvel-logo.png" />
+      <TopBarLogoLink to="/">
+        <TopBarLogo alt="Logo de Marvol" src="images/Marvel-logo.png" />
+      </TopBarLogoLink>
     </TopBarWrapper>
   </Container>
 )

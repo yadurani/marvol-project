@@ -15,7 +15,7 @@ export const HeaderContainer = styled.header`
 export const TopBarWrapper = styled.div`
   display: grid;
   grid-template-columns: 163px 1fr 163px;
-  height: 52px;
+  height: 50px;
   @media (max-width: 768px) {
     grid-template-columns: 40px 1fr 40px;
   }
@@ -38,6 +38,12 @@ export const TopBarLink = styled(Link)`
     display: none;
   }
 `
+export const TopBarLogoLink = styled(Link)`
+  align-self: center;
+  display: grid;
+  justify-self: center;
+`
+
 export const TopBarLogo = styled.img`
   justify-self: center;
   align-self: center;

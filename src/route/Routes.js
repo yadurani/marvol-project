@@ -2,14 +2,20 @@ import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import Layout from '../components/Common/Layout'
+import ScrollToTop from '../components/Common/ScrollTop'
+import Comics from '../containers/Comics'
+import DetailComic from '../containers/DetailComic'
 import Home from '../containers/Home'
 
 const Routes = () => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Layout>
+        <ScrollToTop />
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/historietas" exact component={Comics} />
+          <Route path="/detalle" exact component={DetailComic} />
         </Switch>
       </Layout>
     </BrowserRouter>

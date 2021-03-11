@@ -32,4 +32,5 @@ export const CreditCardTitle = styled.h3`
   font-family: ${({ theme }) => theme.fonts.condensed};
   font-size: ${({ theme }) => theme.sizeFont.lg};
   margin: 24px 0;
+  line-height: 32px;
 `

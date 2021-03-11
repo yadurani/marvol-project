@@ -7,11 +7,11 @@ export const SliderWrapper = styled.div`
   margin-top: 92px;
   overflow: hidden;
   @media (max-width: 768px) {
-    margin-top: 52px;
+    margin-top: 50px;
   }
   @media (max-width: 767px) {
     height: auto;
-    margin-top: 52px;
+    margin-top: 50px;
   }
 `
 export const SliderNavList = styled.ul`

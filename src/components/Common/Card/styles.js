@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const CardImg = styled.img`
@@ -7,15 +8,16 @@ export const CardImg = styled.img`
 
 export const CardTitle = styled.p`
   color: ${({ theme }) => theme.colors.secondary};
-  font-size: ${({ theme }) => theme.sizeFont.md};
+  font-size: ${({ theme }) => theme.sizeFont.sm};
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   text-transform: initial;
 `
 
 export const CardSubtitle = styled.p`
   color: ${({ theme }) => theme.colors.gray.main};
   font-size: ${({ theme }) => theme.sizeFont.xs};
+  margin-top: 0;
   margin-bottom: 0;
 `
 export const CardWrapper = styled.li`
@@ -29,4 +31,8 @@ export const CardWrapper = styled.li`
   &:hover ${CardImg} {
     transform: translateY(-2%);
   }
+`
+export const CardLink = styled(Link)`
+  text-decoration: none;
+  cursor: pointer;
 `

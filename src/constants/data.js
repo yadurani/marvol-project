@@ -142,3 +142,46 @@ export const socials = [
     img: 'images/social/youtube.svg',
   },
 ]
+
+export const newReleases = [
+  {
+    img: 'images/release/card-1.jpg',
+    title: 'Chris Claremont Anniversary Special #1',
+    caption: 'Claremont, Chen',
+  },
+  {
+    img: 'images/release/card-2.jpg',
+    title: 'King in Black: Thunderbolts #1',
+    caption: 'Rosenberg, Ferreyra',
+  },
+  {
+    img: 'images/release/card-3.jpg',
+    title: 'King in Black: Planet of the Symbiotes #1',
+    caption: 'Chapman, Vilanova',
+  },
+  {
+    img: 'images/release/card-4.jpg',
+    title: 'King in Black: Gwenom Vs. Carnage #1',
+    caption: 'Mcguire, F Flaviano',
+  },
+  {
+    img: 'images/release/card-5.jpg',
+    title: 'Marauders #17',
+    caption: 'Duggan, Lolli',
+  },
+  {
+    img: 'images/release/card-6.jpg',
+    title: 'Immortal Hulk #42',
+    caption: 'Ewing, Gorham',
+  },
+  {
+    img: 'images/release/card-7.jpg',
+    title: 'The Amazing Spider-Man #57',
+    caption: 'Spencer, Bagley',
+  },
+  {
+    img: 'images/release/card-8.jpg',
+    title: 'The Union #2',
+    caption: 'Grist, Vito',
+  },
+]

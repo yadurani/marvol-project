@@ -1,13 +1,20 @@
 import React from 'react'
-
-import { CardImg, CardTitle, CardSubtitle, CardWrapper } from './styles'
+import {
+  CardImg,
+  CardTitle,
+  CardSubtitle,
+  CardWrapper,
+  CardLink,
+} from './styles'
 
 const Card = ({ img, title, date }) => {
   return (
     <CardWrapper>
-      <CardImg src={img} alt={title} />
-      <CardTitle>{title}</CardTitle>
-      <CardSubtitle>{date}</CardSubtitle>
+      <CardLink to="/detalle">
+        <CardImg src={img} alt={title} />
+        <CardTitle>{title}</CardTitle>
+        <CardSubtitle>{date}</CardSubtitle>
+      </CardLink>
     </CardWrapper>
   )
 }

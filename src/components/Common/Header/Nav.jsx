@@ -37,7 +37,7 @@ const NavBar = ({ active, handleOpen }) => {
           </NavItem>
           <NavItem className="films">
             Películas
-            <NavIconNext onClick={handleFilms} />
+            <NavIconNext onClick={handleFilms} aria-label="View Film" />
             <Submenu
               close={handleFilms}
               active={isOpenFilms}
@@ -48,7 +48,7 @@ const NavBar = ({ active, handleOpen }) => {
           </NavItem>
           <NavItem className="series">
             Programas de televisión
-            <NavIconNext onClick={handleSeries} />
+            <NavIconNext onClick={handleSeries} aria-label="View TV" />
             <Submenu
               close={handleSeries}
               active={isOpenSeries}

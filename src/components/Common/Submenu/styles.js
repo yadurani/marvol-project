@@ -9,11 +9,11 @@ export const SubmenuWrapper = styled.div`
   height: fit-content;
   left: 0;
   overflow: auto;
-  padding: 40px 0;
+  padding: 45px 0;
   position: fixed;
   right: 0;
   text-align: center;
-  top: 93px;
+  top: 92px;
   @media (max-width: 768px) {
     background: ${({ theme }) => theme.colors.secondary};
     display: block;

@@ -8,4 +8,9 @@ export const ParagraphContainer = styled.p`
     css`
       color: ${({ theme }) => theme.colors.white};
     `}
+  ${(props) =>
+    props.bold &&
+    css`
+      font-weight: 700;
+    `}
 `
