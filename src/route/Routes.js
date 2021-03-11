@@ -9,7 +9,7 @@ import Home from '../containers/Home'
 
 const Routes = () => {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <Layout>
         <ScrollToTop />
         <Switch>
