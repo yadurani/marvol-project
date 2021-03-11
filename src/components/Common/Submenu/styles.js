@@ -13,7 +13,7 @@ export const SubmenuWrapper = styled.div`
   position: fixed;
   right: 0;
   text-align: center;
-  top: 92px;
+  top: 91px;
   @media (max-width: 768px) {
     background: ${({ theme }) => theme.colors.secondary};
     display: block;

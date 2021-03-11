@@ -7,10 +7,10 @@ import {
   CardLink,
 } from './styles'
 
-const Card = ({ img, title, date }) => {
+const Card = ({ img, title, date, route = '#' }) => {
   return (
     <CardWrapper>
-      <CardLink to="/detalle">
+      <CardLink to={route}>
         <CardImg src={img} alt={title} />
         <CardTitle>{title}</CardTitle>
         <CardSubtitle>{date}</CardSubtitle>
