@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 
 import Layout from '../components/Common/Layout'
 import ScrollToTop from '../components/Common/ScrollTop'
@@ -9,7 +9,7 @@ import Home from '../containers/Home'
 
 const Routes = () => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <Layout>
         <ScrollToTop />
         <Switch>
@@ -18,7 +18,7 @@ const Routes = () => {
           <Route path="/:title" exact component={DetailComic} />
         </Switch>
       </Layout>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
