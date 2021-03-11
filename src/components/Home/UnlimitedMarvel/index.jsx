@@ -15,7 +15,7 @@ const UnlimitedMarvel = () => {
   return (
     <UnlimitedWrapper>
       <UnlimitedBannerContent>
-        <UnlimitedImgMobile src="images/unlimited.png" alt="Unlimited marvel" />
+        <UnlimitedImgMobile src="images/unlimited.jpg" alt="Unlimited marvel" />
         <Container>
           <UnlimitedBannerText>
             <UnlimitedTitle>DISPONIBLE AHORA</UnlimitedTitle>
