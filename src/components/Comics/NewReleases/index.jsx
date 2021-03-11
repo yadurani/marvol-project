@@ -6,7 +6,7 @@ import { Container } from '../../../styled/styledCommons'
 import { BannerTitle } from '../Banner/styles'
 
 const NewRelease = () => {
-  const getRoute = (id) => `/${id}`
+  const getRoute = (id) => `/historietas/${id}`
   return (
     <Container>
       <BannerTitle>13 DE ENERO: NUEVOS LANZAMIENTOS</BannerTitle>

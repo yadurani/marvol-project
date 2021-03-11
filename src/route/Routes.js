@@ -9,13 +9,13 @@ import Home from '../containers/Home'
 
 const Routes = () => {
   return (
-    <HashRouter>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Layout>
         <ScrollToTop />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/historietas" exact component={Comics} />
-          <Route path="/:title" exact component={DetailComic} />
+          <Route path="/historietas/:title" exact component={DetailComic} />
         </Switch>
       </Layout>
     </HashRouter>
