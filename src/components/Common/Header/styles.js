@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 export const HeaderContainer = styled.header`
   background: ${({ theme }) => theme.colors.secondary};
@@ -133,6 +133,7 @@ export const NavItem = styled.li`
   &:visited {
     outline: none;
     background-color: transparent;
+    color: white;
   }
   &:first-child {
     padding: 15px 0 0;
@@ -145,6 +146,30 @@ export const NavItem = styled.li`
     grid-auto-flow: column;
     justify-content: space-between;
     padding: 15px 15px;
+  }
+  a {
+    color: white;
+  }
+  .active {
+    &:before {
+      background: ${({ theme }) => theme.colors.primary.main};
+      bottom: 0;
+      content: '';
+      height: 4px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      transform: translateY(0px);
+      transition: all 0.3s ease;
+      width: 100%;
+      opacity: 1;
+      @media (max-width: 768px) {
+        visibility: hidden;
+      }
+    }
+    @media (max-width: 768px) {
+      color: ${({ theme }) => theme.colors.primary.main};
+    }
   }
   &:before {
     background: ${({ theme }) => theme.colors.primary.main};
@@ -162,6 +187,7 @@ export const NavItem = styled.li`
       visibility: hidden;
     }
   }
+
   &:hover {
     &:before {
       transform: translateY(0px);
@@ -177,7 +203,7 @@ export const NavItem = styled.li`
   }
 `
 
-export const NavItemLink = styled(Link)`
+export const NavItemLink = styled(NavLink)`
   color: inherit;
   text-decoration: none;
 `

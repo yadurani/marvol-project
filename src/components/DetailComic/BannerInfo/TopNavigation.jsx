@@ -1,6 +1,9 @@
 import React from 'react'
 import {
+  TopIconBack,
+  TopIconNext,
   TopNavigationContent,
+  TopNavigationLink,
   TopNavigationWrapper,
   TopNavPages,
 } from './styles'
@@ -11,8 +14,20 @@ const TopNavigation = () => {
     <TopNavigationWrapper>
       <Container>
         <TopNavigationContent>
-          <button>volver</button>
-          <TopNavPages>hola</TopNavPages>
+          <TopNavigationLink to="/historietas">
+            <TopIconBack />
+            Volver
+          </TopNavigationLink>
+          <TopNavPages>
+            <TopNavigationLink to="#">
+              <TopIconBack white />
+              Anterior
+            </TopNavigationLink>
+            <TopNavigationLink to="#">
+              Siguiente
+              <TopIconNext white />
+            </TopNavigationLink>
+          </TopNavPages>
         </TopNavigationContent>
       </Container>
     </TopNavigationWrapper>

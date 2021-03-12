@@ -33,7 +33,9 @@ const NavBar = ({ active, handleOpen }) => {
           <NavItem>Videos</NavItem>
           <NavItem>Caracteres</NavItem>
           <NavItem onClick={handleOpen}>
-            <NavItemLink to="/historietas">Historietas</NavItemLink>
+            <NavItemLink to="/historietas" activeClassName="active">
+              Historietas
+            </NavItemLink>
           </NavItem>
           <NavItem className="films">
             Películas

@@ -17,4 +17,9 @@ export const TitleContainer = styled.h2`
     css`
       margin: 0;
     `}
+  ${(props) =>
+    props.initial &&
+    css`
+      text-transform: initial;
+    `}
 `
