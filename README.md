@@ -1,6 +1,6 @@
 # Marvol 🦸
 
-¿Qué es lo primero que se te viene a la mente cuando escuchas la palabra Marvol? ¿Superhéroes, verdad?
+What's the first thing that comes to mind when you hear the word Marvol? Superheroes, right?
 
 ## Demo 🚀
 
